@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="c" id="i"></div>
+  </body>
+  <script>
+    oml();
+    function rng(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    function oml(){
+      var jokes = [
+      "I don't trust stairs. They're always up to something.",
+      "How does a penguin build its house? Igloos it together.",
+      "When the snail hits the table.",
+      "Remember when I went to the moon?",
+      "What did the grape say when it got crushed? Nothing, it just let out a little wine.",
+      "Need an ark to save two of every animal? I noah guy.",
+      "What was Forrest Gump’s email password? 1forrest1",
+      "I had a crazy dream last night! I was swimming in an ocean of orange soda. Turns out it was just a Fanta sea.",
+      "I want to be cremated as it is my last hope for a smoking hot body."
+    ];
+      var myDiv = document.getElementById("i");
+      myDiv.innerHTML = jokes[rng(0, jokes.length)];
+    }
+  </script>
+  <style>
+    div.c {
+      font-family: "Courier New";
+      position: absolute;
+      top: 40%;
+      left: 40%;
+    }
+    html {
+      background-color: DarkGrey;
+    }
+  </style>
+</html>
